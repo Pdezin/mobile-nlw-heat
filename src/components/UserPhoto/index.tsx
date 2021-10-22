@@ -1,6 +1,6 @@
 import React from "react";
 import { Image } from "react-native";
-import { styles } from "./style";
+import { styles } from "./styles";
 import { LinearGradient } from "expo-linear-gradient";
 
 import avatarImg from "../../assets/avatar.png";
@@ -29,6 +29,8 @@ export const UserPhoto = ({ imageUri, sizes = "NORMAL" }: Props) => {
 
   return (
     <LinearGradient
+      start={{ x: 0, y: 0.8 }}
+      end={{ x: 0.9, y: 1 }}
       colors={[COLORS.PINK, COLORS.YELLOW]}
       style={[
         styles.container,
